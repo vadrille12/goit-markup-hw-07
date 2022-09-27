@@ -1,0 +1,24 @@
+:root {
+   --main-font: 'Roboto', sans-serif;
+   --logo-font: 'Raleway', sans-serif;
+   --main-light: #ffffff;
+   --main-font-color: #212121;
+   --secondary-font-color: #757575;
+   --hover-focus-color: #2196f3;
+   --footer-contact-color: #ffffff99;
+   --dark-bg-color: #2f303a;
+   --btn-active: #188ce8;
+   --border-color: #eeeeee;
+   --bg-ourteam: #f5f4fa;
+   --svg-color: #afb1b8;
+   --soc-bg-footer: rgba(255, 255, 255, 0.1);
+}
+
+body {
+   font-family: var(--main-font);
+   letter-spacing: 0.03em;
+}
+
+header {
+   letter-spacing: 0.02em;
+}

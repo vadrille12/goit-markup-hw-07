@@ -1,0 +1,134 @@
+.header {
+   border-bottom: 1px solid #ececec;
+}
+
+.container-h {
+   display: flex;
+   width: 1200px;
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-bottom: 0;
+   align-items: center;
+}
+
+.logo-header {
+   font-family: var(--logo-font);
+   color: var(--main-font-color);
+   font-weight: 700;
+   font-size: 26px;
+   text-decoration: none;
+   letter-spacing: 0.03em;
+   line-height: 1.2;
+   padding-top: 24px;
+   padding-bottom: 24px;
+   margin-right: 93px;
+}
+
+.accent {
+   color: var(--hover-focus-color);
+}
+
+.menu-nav {
+   list-style: none;
+   padding: 0;
+
+   display: inline-flex;
+   justify-content: space-between;
+   gap: 50px;
+   margin-right: 316px;
+}
+
+.menu-link {
+   position: relative;
+
+   color: var(--main-font-color);
+   font-weight: 500;
+   font-size: 14px;
+   text-decoration: none;
+   line-height: 1.4;
+   display: flex;
+   padding-top: 32px;
+   padding-bottom: 32px;
+
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+   color: var(--hover-focus-color);
+}
+
+/* ===== Анимация after ===== */
+
+.menu-link::after {
+   position: absolute;
+   left: 0;
+   bottom: -1px;
+
+   content: '';
+   display: block;
+   width: 100%;
+   height: 4px;
+   background-color: var(--hover-focus-color);
+   border-radius: 2px;
+
+   transform: scaleX(0);
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-link:hover::after {
+   transform: scaleX(1);
+}
+
+/* ======================================================== */
+
+.menu-link.current {
+   color: var(--hover-focus-color);
+   position: relative;
+}
+
+.menu-link.current::before {
+   content: '';
+   position: absolute;
+   bottom: -1px;
+   left: 0;
+   width: 100%;
+   height: 4px;
+   background-color: var(--hover-focus-color);
+   border-radius: 2px;
+}
+
+.contact-menu {
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   gap: 30px;
+   padding: 0;
+
+}
+
+.icon {
+   fill: currentColor;
+}
+.contact-header {
+   color: var(--secondary-font-color);
+   font-weight: 500;
+   font-size: 14px;
+   text-decoration: none;
+   line-height: 1.4;
+   padding-top: 32px;
+   padding-bottom: 32px;
+   background-color: var(--main-light);
+   display: flex;
+   align-items: center;
+   gap: 10px;
+
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-header:hover,
+.contact-header:focus {
+   color: var(--hover-focus-color);
+}
