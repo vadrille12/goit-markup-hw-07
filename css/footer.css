@@ -1,116 +1,97 @@
-.container-f {
-   width: 1200px;
-   margin-right: auto;
-   margin-left: auto;
-   padding-left: 15px;
-   padding-right: 15px;
-   margin-bottom: 0;
-   display: flex;
-}
-
 .footer {
-   background-color: var(--dark-bg-color);
    padding-top: 60px;
    padding-bottom: 60px;
+   background-color: var(--dark-bg-color);
 }
 
-.footer-info {
+.footer__wrapper {
+   display: flex;
+   align-items: baseline;
+}
+
+.footer__info {
    margin-right: 70px;
 }
 
-.logo-footer {
+.footer__logo {
+   display: inline-block;
+   margin-bottom: 20px;
+
    font-family: var(--logo-font);
    color: var(--main-light);
    font-weight: 700;
    font-size: 26px;
    text-decoration: none;
    line-height: 1.2;
-
-   margin-bottom: 20px;
 }
 
-.accent {
-   color: var(--hover-focus-color);
-}
-
-.menu {
-   list-style: none;
-   padding: 0;
-
-}
-
-.menu-link-footer {
-   margin-bottom: 9px;
+.footer__list-item {
    width: 231px;
+   margin-bottom: 9px;
 }
 
-.menu-link-footer:last-child {
+.footer__list-item:last-child {
    margin-bottom: 0;
 }
 
-.address-footer {
-   margin-top: 20px;
-}
+.footer__addres {
+   margin-bottom: 9px;
 
-.addres {
    font-weight: 400;
    font-size: 14px;
    color: var(--main-light);
    text-decoration: none;
    font-style: normal;
    line-height: 1.7;
-   margin-bottom: 9px;
 
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.addres:hover,
-.addres:focus {
-   color: var(--hover-focus-color);
-}
+.footer__contact {
+   margin-bottom: 9px;
 
-.contact-footer {
    color: var(--footer-contact-color);
    font-weight: 400;
    font-size: 14px;
    text-decoration: none;
    font-style: normal;
    line-height: 1.7;
-   margin-bottom: 9px;
 
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-footer:hover,
-.contact-footer:focus {
+.footer__addres:hover,
+.footer__addres:focus,
+.footer__contact:hover,
+.footer__contact:focus {
    color: var(--hover-focus-color);
 }
 
 .join {
+   margin-right: 93px;
+}
+
+.join__title {
+   margin-bottom: 20px;
+
    color: var(--main-light);
    font-weight: 700;
    font-size: 14px;
    line-height: calc(16 / 14);
    letter-spacing: 0.03em;
    text-transform: uppercase;
-   margin-right: 93px;
 }
 
-.joinus {
-
-   margin-bottom: 20px;
-}
-
-.social-ul-footer {
+.join__socials {
    display: flex;
    gap: 10px;
-   padding: 0;
+
    justify-content: center;
 
    list-style: none;
 }
 
-.socials-link-footer {
+.join__link {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -123,23 +104,33 @@
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials-link-footer:hover,
-.socials-link-footer:focus {
+.join__link:hover,
+.join__link:focus {
    background-color: var(--hover-focus-color);
 }
 
-.social-icon-footer {
+.join__icon {
    fill: currentColor;
-}
-
-.div-wrapper {
-   display: flex;
-   align-items: baseline;
 }
 
 /* ============ Форма рассылки ============ */
 
-.mail-input {
+.distribution__title {
+   margin-bottom: 20px;
+
+   color: var(--main-light);
+   font-weight: 700;
+   font-size: 14px;
+   line-height: calc(16 / 14);
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+}
+
+.distribution__form {
+   position: relative;
+}
+
+.distribution__input {
    width: 358px;
    height: 50px;
    padding: 15px 16px;
@@ -151,11 +142,12 @@
    margin-right: 12px;
 }
 
-.mail {
-   position: relative;
+.distribution__input:focus {
+   border: 1px solid var(--hover-focus-color);
+   outline: none;
 }
 
-.mail-label {
+.distribution__label {
    position: absolute;
    top: 50%;
    left: 16px;
@@ -165,20 +157,12 @@
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mail-input:focus {
-   border: 1px solid var(--hover-focus-color);
-   outline: none;
-}
-
-
-.mail-input:focus + .mail-label,
-.mail-input:not(:placeholder-shown) + .mail-label {
+.distribution__input:focus + .distribution__label,
+.distribution__input:not(:placeholder-shown) + .distribution__label {
    transform: translateY(50px) scale(1.2);
 }
-.submit-button {
+.distribution__submit-button {
    display: inline-flex;
-   justify-content: center;
-   align-items: center;
 
    padding: 10px 28px;
 
@@ -193,11 +177,9 @@
    background-color: var(--hover-focus-color);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
-
-   fill: var(--main-light);
 }
 
-.submit-icon {
+.distribution__submit-icon {
    margin-left: 10px;
 
    width: 24px;
