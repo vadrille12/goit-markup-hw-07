@@ -1,4 +1,4 @@
-.footer {
+/* .footer {
    padding-top: 60px;
    padding-bottom: 60px;
    background-color: var(--dark-bg-color);
@@ -7,13 +7,13 @@
 .footer__wrapper {
    display: flex;
    align-items: baseline;
-}
+} */
 
-.footer__info {
+/* .footer__info {
    margin-right: 70px;
-}
+} */
 
-.footer__logo {
+/* .footer__logo {
    display: inline-block;
    margin-bottom: 20px;
 
@@ -23,9 +23,9 @@
    font-size: 26px;
    text-decoration: none;
    line-height: 1.2;
-}
+} */
 
-.footer__list-item {
+/* .footer__list-item {
    width: 231px;
    margin-bottom: 9px;
 }
@@ -65,9 +65,9 @@
 .footer__contact:hover,
 .footer__contact:focus {
    color: var(--hover-focus-color);
-}
+} */
 
-.join {
+/* .join {
    margin-right: 93px;
 }
 
@@ -111,11 +111,11 @@
 
 .join__icon {
    fill: currentColor;
-}
+} */
 
 /* ============ Форма рассылки ============ */
 
-.distribution__title {
+/* .distribution__title {
    margin-bottom: 20px;
 
    color: var(--main-light);
@@ -185,4 +185,4 @@
    width: 24px;
    height: 24px;
    fill: currentColor;
-}
+} */
